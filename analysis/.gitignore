@@ -1,0 +1,11 @@
+*.pyc
+__pycache__
+*.pkl
+log
+post/clustering
+*.nc
+plots
+*.csv
+*.csv
+clustering/tmp
+clustering/Results

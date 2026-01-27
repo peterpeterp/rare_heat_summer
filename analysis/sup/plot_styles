@@ -1,0 +1,68 @@
+lines.linewidth: 0.5               # line width in points
+font.family: serif
+font.serif: "Palatino Linotype"
+font.size:    8.0
+text.usetex: True  # use latex for all text handling. The following fonts
+axes.linewidth: 1    # edge line width
+axes.titlesize: 8.0   # font size of the axes title
+axes.titlepad:      8.0     # pad between axes and title in points
+axes.labelsize: 8.0  # font size of the x and y labels
+                                   # according to the user's locale.
+                                   # For example, use ',' as a decimal
+                                   # separator in the fr_FR locale.
+axes.formatter.use_mathtext: True  # When True, use mathtext for scientific
+                                     # notation.
+
+axes.prop_cycle : (cycler('color', ['k', 'r', 'b', 'g']) + cycler('ls', ['-', '--', ':', '-.']))
+axes.xmargin:   .05  # x margin.  See `axes.Axes.margins`
+axes.ymargin:   .05  # y margin.  See `axes.Axes.margins`
+axes.zmargin:   .05  # z margin.  See `axes.Axes.margins`
+axes.autolimit_mode: "round_numbers" #round_numbers  # If "data", use axes.xmargin and axes.                                         
+xtick.top: True
+xtick.bottom: True
+xtick.major.size: 4.0
+xtick.minor.size: 2.0
+xtick.major.width: 1
+xtick.minor.width: 1
+xtick.direction: out
+xtick.minor.visible: True
+xtick.major.top: True
+xtick.major.bottom: True
+xtick.minor.top: True
+xtick.minor.bottom: True
+xtick.major.pad: 5.0
+xtick.minor.pad: 5.0
+ytick.labelsize:medium
+ytick.left: True
+ytick.right: True
+ytick.major.size: 4.0
+ytick.minor.size: 2.0
+ytick.major.width: 1
+ytick.minor.width: 1
+ytick.direction: out
+ytick.minor.visible: True
+ytick.major.left: True
+ytick.major.right: True
+ytick.minor.left: True
+ytick.minor.right: True
+ytick.major.pad: 5.0
+ytick.minor.pad: 5.0
+xtick.labelsize:medium
+grid.color: black #"#b0b0b0"  # grid color
+grid.alpha:     0.1        # transparency, between 0.0 and 1.0
+legend.loc:           best
+legend.frameon:       True     # if True, draw the legend on a background patch
+legend.framealpha:    1      # legend patch transparency
+legend.edgecolor:     0     # background patch boundary color
+legend.fancybox:      False     # if True, use a rounded box for the
+legend.markerscale:   0.25      # the relative size of legend markers vs. original
+legend.fontsize: medium
+legend.handlelength:  1  # the length of the legend lines
+legend.handletextpad: 0.5  # the space between the legend line and legend text
+legend.columnspacing: .75  # column separation
+figure.figsize: 5.6, 1.7305315203955498  # figure size in inches
+figure.dpi: 300       # figure dots per inch
+figure.autolayout: True  # When True, automatically adjust subplot
+figure.constrained_layout.use: False  # When True, automatically make plot
+savefig.dpi: 300      # figure dots per inch or 'figure'
+savefig.bbox: standard    # {tight, standard}
