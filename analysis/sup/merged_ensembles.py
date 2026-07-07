@@ -3,11 +3,11 @@ import xarray as xr
 
 # general functions
 def weighted_probability(
-        tas, 
+        x, 
         weight, 
         threshold
         ):
-    return float(((tas >= threshold) * weight).sum() / weight.sum())
+    return float(((x >= threshold) * weight).sum() / weight.sum())
 
 def weighted_expected_value(
         tas, 
