@@ -10,7 +10,7 @@ preprocessing_attr = 'regional average over region of interest'
 def preprocessor(nc, *args):
     # regional mask
     regional_mask = create_or_load_regional_mask(
-        regional_mask_file = f"/work/bb1152/u290372/GKLT/regions/wEU.nc",
+        regional_mask_file = f"regional_mask", 
         slice_lat=slice(44,55), 
         slice_lon=slice(-4,12),
         )

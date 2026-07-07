@@ -15,7 +15,7 @@ def create_or_load_regional_mask(regional_mask_file, slice_lat, slice_lon):
         return xr.open_dataset(regional_mask_file)['mask'] 
     else:
         # create
-        h1_file = f"/work/bb1152/u290372/cesm215_archive/b.e215.B1850cmip6.f09_g17.001.fE.0500.ens000/atm/hist/b.e215.B1850cmip6.f09_g17.001.fE.0500.ens000.cam.h1.0873-01-02-00000.nc"
+        h1_file = f"some_CESM2_simuloation/atm/hist/b.e215.B1850cmip6.f09_g17.001.fE.0500.ens000.cam.h1.0873-01-02-00000.nc"
         with xr.open_dataset(h1_file) as nc:
             nc = shift_lon(nc)
             y = nc['TREFHT'].sel(lat=slice_lat, lon=slice_lon)[0]
@@ -45,7 +45,7 @@ def main_observable(archive_path):
 
     # regional mask
     regional_mask = create_or_load_regional_mask(
-        regional_mask_file = f"/work/bb1152/u290372/GKLT/regions/wEU.nc",
+        regional_mask_file = f"regional_mask.nc",
         slice_lat=slice(44,55), 
         slice_lon=slice(-4,12),
         )

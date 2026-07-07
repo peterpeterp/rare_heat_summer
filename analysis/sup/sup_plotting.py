@@ -19,7 +19,7 @@ matplotlib.rcParams['scatter.marker']='.'
 from mpl_toolkits.axes_grid1.inset_locator import InsetPosition
 
 def savefig(name, also_png=True, **kwargs):
-    for possible_location in ['/work/bb1152/u290372/REA_post/plots/heat_wEU_JJA/', '/home/peterp/Dokumente/0_paper-drafts/rea_heat_summer_weu_overleaf/figures/']:
+    for possible_location in ['PATH_TO_SPECIFY']: # specify where to store plots
         if os.path.isdir(possible_location):
             out_fl = f"{possible_location}/{name}"
             break

@@ -47,7 +47,7 @@ parser.add_argument("--overwrite", action='store_true')
 args = parser.parse_args()
 
 # set archive dir
-dir_archive=f"/work/{args.dkrz_project_for_archive}/u290372/cesm{conf.version}_archive"
+dir_archive=f"{args.dkrz_project_for_archive}/cesm{conf.version}_archive"
 
 assert args.perturbation_seed == 0 or args.perturbation_type is not None, "specify perturbation type if perturbation_seed != 0"
 
@@ -157,11 +157,6 @@ run(f"./xmlchange GET_REFCASE=FALSE")
 for component in ['cam', 'cice', 'cism', 'clm', 'cpl', 'mosart', 'pop', 'ww']:
     run(f'cp {args.user_nl_file_directory}/user_nl_{component} ./user_nl_{component}')
 
-# # --- link postrun script ---
-# # if [ $OUTPUT = default ]; then
-#     # ./xmlchange POSTRUN_SCRIPT=/work/bb1152/u290372/cesm215_user_nl/default/postprocessing.sh
-#     # ./xmlchange DATA_ASSIMILATION_SCRIPT=/work/bb1152/u290372/cesm215_user_nl/default/postprocessing.sh
-# # fi
 
 ####################################
 # save all command line arguments  #

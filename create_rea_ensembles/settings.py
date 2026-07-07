@@ -12,10 +12,11 @@ class configuration_parameters():
 
 conf = configuration_parameters()
 
-dir_scripts=f"/work/bb1152/u290372/cesm{conf.version}/cime/scripts"
-dir_run=f"/scratch/u/u290372/cesm{conf.version}_output"
-dir_repo=f"/home/u/u290372/projects/cesm215_peters_scripts/"
-dir_user_nl = f"~/projects/cesm215_peters_scripts/cesm215_user_nl"
+# specify these directories
+dir_scripts=f'PATH_TO_SPECIFY'
+dir_run=f'PATH_TO_SPECIFY'
+dir_repo=f'PATH_TO_SPECIFY'
+dir_user_nl = f'PATH_TO_SPECIFY'
 
 
 sbatch_modules = '''
