@@ -30,9 +30,9 @@ Run all cells in the following jupyter notebooks:
 
 | jupyter notebook | purpose |
 --------------|----------| 
-| 0_prepare_data_pickle.ipynb | Load regional averages and meta data or rare-event sampling ensembles |
-| 1_main_analysis.ipynb | Analysis using regional averages (most plots of the paper) |
-| 2_composite_maps.ipynb | All analysis with gridded data |
+| analysis/0_prepare_data_pickle.ipynb | Load regional averages and meta data or rare-event sampling ensembles |
+| analysis/1_main_analysis.ipynb | Analysis using regional averages (most plots of the paper) |
+| analysis/2_composite_maps.ipynb | All analysis with gridded data |
 
 ## Contact
 
